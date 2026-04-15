@@ -1,0 +1,53 @@
+{
+  "skill_name": "contract-review",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "审查一份中文商业合同，输出风险分级、证据定位与可直接替换的修订建议。",
+      "expected_output": "输出固定结构的审查表，包含条款定位、风险优先级、修改建议与复核标记。",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "审查一份资管业务相关合同并路由到正确分支（issuance/investment）。",
+      "expected_output": "完成模式判定与分支检查项，输出包含前置条件与回退条件的审查结论。",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "用户只给合同文件，未给业务类型和立场，要求直接出最终结论。",
+      "expected_output": "触发 Inversion 参数收集门禁；未收齐参数时不得直接进入 Phase 1，或显式 manual_override。",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "用户要求 DOCX 修订版，且意见同时包含“改为”和“提示关注”。",
+      "expected_output": "修改型动作进入 Track Changes，提示型动作进入 Comments，不混写通道。",
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "用户未要求双层输出，要求快速交付评审表。",
+      "expected_output": "默认 delivery_only 主表交付，不自动附加全景分析与差异说明。",
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "存在签署版与草稿版口径冲突，业务要求按草稿写结论。",
+      "expected_output": "按版本优先级处理冲突，并在输出中披露冲突与采用口径，必要时触发 veto/warning。",
+      "files": []
+    },
+    {
+      "id": 7,
+      "prompt": "审查一份托管协议，合同中出现托管人职责、估值复核、投资监督和免责条款。",
+      "expected_output": "在原 canonical mode 不变的前提下自动叠加 custody checklist，输出十项增补方向缺口及 P0 红线判断。",
+      "files": []
+    },
+    {
+      "id": 8,
+      "prompt": "托管协议新增“借助托管行品牌不当营销”与“托管人单方终止”条款，要求判断是否可接受。",
+      "expected_output": "触发 custody overlay；识别不当营销定义边界、整改期限、终止触发条件与过渡机制，给出可修改文本方向。",
+      "files": []
+    }
+  ]
+}

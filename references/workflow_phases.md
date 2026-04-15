@@ -31,7 +31,7 @@
 1. Execute target clauses review (price/payment/delivery/core obligations).
 2. Execute process clauses review (conditions precedent, notices, timeline, approvals).
 3. Execute protection clauses review (breach/termination/liability/dispute/security).
-4. In `asset_mgmt:issuance` or `asset_mgmt:investment:alternative`, load `_AltsReview` interface mapping and apply product template stacking.
+4. In `asset_mgmt:issuance` or `asset_mgmt:investment:alternative`, apply product template stacking from in-repo checklists; if needed, load optional mapping `references/interface_asset_mgmt.md`.
 5. For any comparative statement, run comparability check: same object layer, metric meaning, time window, and scenario. If not comparable, mark as parallel observation.
 6. If `custody_overlay=on`, run custody-specific 10-point supplementation checks and output separate custody gap summary.
 

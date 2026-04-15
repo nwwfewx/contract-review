@@ -57,11 +57,11 @@ asset_mgmt
 | 路径 | 加载清单 | 接口调用 | 立场 |
 |------|----------|----------|------|
 | `general` | `references/checklist_basic.md`（复杂场景可叠加 `references/checklist_strategic.md`） | — | — |
-| `asset_mgmt/issuance` | `references/checklist_issuance.md` | `_AltsReview`（复用） | **管理人**：顺利发行 |
-| `asset_mgmt/investment/alternative` | `references/checklist_financial.md` | `_AltsReview` | **投资人**：投资安全 |
+| `asset_mgmt/issuance` | `references/checklist_issuance.md` | 可选：`references/interface_asset_mgmt.md` | **管理人**：顺利发行 |
+| `asset_mgmt/investment/alternative` | `references/checklist_financial.md` | 可选：`references/interface_asset_mgmt.md` | **投资人**：投资安全 |
 | `asset_mgmt/investment/standardized` | `references/checklist_standardized.md` | — | 投资人 |
 
-> **立场差异说明**：issuance 与 investment/alternative 共用 `_AltsReview` 知识库、案例和审查要点模板，但输出时从管理人视角重述（关注产品合规、管理人权责、投资者保护），而非投资人视角（关注投资安全、交易对手、底层资产）。
+> **立场差异说明**：issuance 与 investment/alternative 可共用同一套产品审查模板，但输出时需从管理人视角重述（关注产品合规、管理人权责、投资者保护），而非投资人视角（关注投资安全、交易对手、底层资产）。
 
 ## Special Overlay Modules（不改变 canonical_mode）
 

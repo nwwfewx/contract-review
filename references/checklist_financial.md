@@ -18,10 +18,10 @@
 1. Check fund path one-to-one mapping against agreed用途.
 2. Treat归集、挪用、pooling without traceability as red flags.
 
-## _AltsReview Linkage Rule
+## Asset-Management Template Stacking Rule
 1. First load通用字段模板, then stack product-specific template.
 2. For mixed attributes, follow stricter regulatory bucket.
-3. Use interface mapping in `interface_altsreview.md`.
+3. Use optional interface mapping in `interface_asset_mgmt.md` when external template packs are available.
 
 ## Custody Agreement Overlay Rule
 1. If contract text is托管协议/托管合同, stack `references/checklist_custody_agreement_2026.md`.

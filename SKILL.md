@@ -23,8 +23,8 @@ Provide structured contract review with strict evidence discipline, explicit ris
 | Any review start | `references/input_schema.md`, `references/mode_selection.md`, `references/workflow_phases.md` |
 | Phase 0 intake ambiguity / recurring failures | `GOTCHAS.md` |
 | `general` route | `references/checklist_basic.md` (+ `references/checklist_strategic.md` when complexity is high) |
-| `asset_mgmt:issuance` route | `references/checklist_issuance.md`, `references/interface_altsreview.md` |
-| `asset_mgmt:investment:alternative` route | `references/checklist_financial.md`, `references/interface_altsreview.md` |
+| `asset_mgmt:issuance` route | `references/checklist_issuance.md`, `references/interface_asset_mgmt.md` |
+| `asset_mgmt:investment:alternative` route | `references/checklist_financial.md`, `references/interface_asset_mgmt.md` |
 | `asset_mgmt:investment:standardized` route | `references/checklist_standardized.md` |
 | Investment advisor agreement / 投资顾问协议 | `references/checklist_investment_advisor.md` (+ keep route base checklist loaded) |
 | Custody agreement / 托管协议 / 托管合同 | `references/checklist_custody_agreement_2026.md` (+ keep route base checklist loaded) |
@@ -36,7 +36,7 @@ Provide structured contract review with strict evidence discipline, explicit ris
 ## Mode Routing
 1. Decide canonical mode key: `general` / `asset_mgmt:issuance` / `asset_mgmt:investment:alternative` / `asset_mgmt:investment:standardized`.
 2. Collect and lock intake parameters before Phase 1.
-3. Load route-specific checklist stack and `_AltsReview` bridge when required.
+3. Load route-specific checklist stack from this repository; external template packs are optional.
 4. Keep output mode explicit: `delivery_only` (default) or `dual_layer` (only on explicit request).
 
 Load `references/mode_selection.md` before Phase execution.

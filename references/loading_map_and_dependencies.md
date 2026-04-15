@@ -40,8 +40,8 @@
 - `references/external_sync_legal_workflows.md`
 - `references/aml_trigger.md`
 - `references/aml_anti_bribery_checklist.md`
-9. _AltsReview bridge (asset_mgmt routes only):
-- `references/interface_altsreview.md`
+9. Asset-management optional interface (asset_mgmt routes only):
+- `references/interface_asset_mgmt.md`
 10. High-frequency failure correction:
 - `GOTCHAS.md`
 11. Delivery gates:
@@ -59,5 +59,5 @@
 ## Skill Dependencies
 1. `docx`: parse and revise DOCX contracts.
 2. `pdf`: extract text/OCR fallback for PDF contracts.
-3. `notebooklm`: optional deep legal/policy lookup for complex disputes.
-4. `_AltsReview`: required for `asset_mgmt:issuance` and `asset_mgmt:investment:alternative`.
+3. External legal search tools: optional deep legal/policy lookup for complex disputes.
+4. External asset-management template library: optional enhancement only; this repository remains runnable without it.

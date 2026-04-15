@@ -58,6 +58,8 @@ git clone https://github.com/nwwfewx/contract-review.git ~/.claude/skills/contra
 3. 合同状态（草稿 / 待签 / 已签 / 用印）
 4. 合同文本（或文件路径）
 
+更多脱敏示例见 [`examples/README.md`](examples/README.md)。
+
 示例 1（通用合同）：
 
 ```text
@@ -108,6 +110,7 @@ git clone https://github.com/nwwfewx/contract-review.git ~/.claude/skills/contra
 ├── checklists/
 ├── protocols/
 ├── references/
+├── examples/
 ├── templates/
 ├── scripts/
 ├── knowledge_base/
@@ -131,7 +134,7 @@ git clone https://github.com/nwwfewx/contract-review.git ~/.claude/skills/contra
 
 这些文件是历史 smoke test 产物，不属于执行依赖，且会增加二进制体积。开源版默认不纳入仓库。
 
-如需示例，建议新增 `examples/` 并放脱敏样例，配套写清输入和期望输出。
+已提供脱敏示例说明：[`examples/README.md`](examples/README.md)。
 
 ## License
 

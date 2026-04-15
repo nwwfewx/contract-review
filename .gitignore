@@ -1,1 +1,4 @@
 .DS_Store
+
+# Local smoke-test artifacts
+smoke_outputs/
